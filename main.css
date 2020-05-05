@@ -104,56 +104,7 @@ header h3{
   font-size: 120%;
 }
  #portfolio{
-   padding:0 2%;
-   display:grid;
-   height: 110vh;
-   grid-gap:1%;
-   grid-template-columns:repeat(8,1fr);
-   grid-template-rows: repeat(7,1fr);
  }
-
-#portfolio h2{
-  grid-column:5/-1;
-  text-align: center;
-  text-transform: capitalize;
-  margin: 5% 0;
-}
-.portfolio-item{
-text-align: center;
-background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url("ferm.png");
-background-repeat: no-repeat;
-transition: all 1s;
-}
-.portfolio-item:hover{
-  transform: scale(1.03);
-  -webkit-transform: scale(1.03);
-  -m-transform: scale(1.03);
-  -o-transform: scale(1.03);
-
-}
-.portfolio-item p{
-  padding: 5%;
-}
-.fermers{
-  grid-column: 1/6;
-  grid-row: 2/3;
-}
-.todo{
-  grid-column: 6/9;
-  grid-row: 2/4;
-}
-.azanta{
-  grid-column: 1/4;
-  grid-row: 3/8;
-}
-  .bootstrap{
-    grid-column: 4/6;
-    grid-row: 3/8;
-  }
-    .calc{
-      grid-column: 6/9;
-      grid-row: 4/8;
-    }
 
 .github{
    /* background-color: #6f6363; */
@@ -162,7 +113,7 @@ transition: all 1s;
   padding: 5%;
 }
 .github p{
-  font-size:200%;
+  font-size:120%;
   font-weight: 400;
 }
 .github a{
@@ -177,7 +128,7 @@ transition: all 1s;
 height:800px;
 margin-top: 10% auto 21% auto;
 background-size: cover;
-background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("camera.jepg");
+background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("abuja.jpg");
 }
 
 #contact h3,#contact p{
@@ -196,14 +147,18 @@ background-color: #fffaf4;
 
 
 input,textarea{
-  background-color: #fff;
+  background:transparent;
   font-size: 105%;
   padding: 2%;
   margin: 3% 5%;
    border:1px solid #000;
   width: 90%;
+  transition:all 0.5s;
 }
-
+input:focus{
+  padding:3%;
+  border-width: 2px;
+}
 textarea {
 resize: none;
 height: 20%;
@@ -236,7 +191,7 @@ form button:active{
 
 
 footer{
-  background-color:rgba(243, 214, 210, 0.5);
+  background-color:#ab987a;
   padding: 6%;
   text-align: center;
 }
@@ -253,11 +208,9 @@ footer p{
 
 }
 @media (min-width: 480px) and (max-width:768px) {
-  header{
-    height: 900px;
-  }
+
  .desc{
-  padding-top: 23%;
+  padding-top: 50%;
   width:40%;
   }
   .desc h3{
@@ -282,23 +235,6 @@ footer p{
     text-align:center;
   }
 
-
-   #portfolio{
-    clear: both;
-    width: 90%;
-    margin:0 auto 5% auto ;
-    text-align: center;
-  }
-
-  .gallery{
-    width: 90%;
-    margin: 0 auto;
-    float: none;
-  }
-
-
-
-
   #contact{
 
     padding:2%;
@@ -318,7 +254,7 @@ footer p{
 @media (max-width:480px){
 
   header{
-    height: 90vh;
+    height: 100vh;
   }
 
   header h1{
@@ -326,10 +262,10 @@ footer p{
     color: #fff;
   }
   .main-heading{
-  font-size:200% ;
+  font-size:150% ;
 }
   .desc{
-    padding-top: 20%;
+    padding-top: 60%;
     padding-right: 2%;
     width: 90%;
     text-align: center;
@@ -355,18 +291,9 @@ footer p{
   }
 
   .about p{
-    line-height: 130%;
+    padding: 5%;
+    line-height: 170%;
   }
-
-  .gallery{
-    width: 90%;
-    float:none;
-    margin: 0 auto;
-  }
-  .gallery p{
-  width: 99%;
-}
-
 
 #contact{
   width: 100%;
