@@ -107,13 +107,13 @@ header h3{
  }
 
 .github{
-   /* background-color: #6f6363; */
+
   text-align: center;
   margin:1% 0;
   padding: 5%;
 }
 .github p{
-  font-size:120%;
+  font-size:150%;
   font-weight: 400;
 }
 .github a{
@@ -262,7 +262,7 @@ footer p{
     color: #fff;
   }
   .main-heading{
-  font-size:150% ;
+  font-size:180% ;
 }
   .desc{
     padding-top: 60%;
@@ -291,7 +291,7 @@ footer p{
   }
 
   .about p{
-    padding: 5%;
+    padding: 5% 5% 10% 5%;
     line-height: 170%;
   }
 
